@@ -55,6 +55,7 @@ body {
   font-family: "Viaoda Libre", serif;
   font-size: 1.1em;
   text-align: justify;
+  margin: 0;
 }
 
 a {
@@ -63,6 +64,7 @@ a {
 }
 
 #all {
+  position: relative;
   width: 670px;
   margin: 0 auto;
   padding: 30px;
@@ -116,13 +118,12 @@ th {
 .parts {
   background-color: var(--accent);
   color: var(--text);
-  padding: 1em;
-  margin-right: 2em;
+  padding: 17px;
   border: 10px double var(--border);
   color: var(--text);
-  position: relative;
-  left: -300px;
-  float: left;
+  position: absolute;
+  right: calc(100% - 20px);
+  width: 146px;
 }
 
 h2 {
@@ -131,10 +132,8 @@ h2 {
   font-size: 3em;
   padding: 0px 50px 0px 50px;
   margin-top: 0;
-  margin-left: 150px;
   overflow: visible;
   text-align: center;
-  width: 400px;
   text-decoration: underline;
 }
 
@@ -148,25 +147,28 @@ h3 {
   font-family: "Special Elite", serif;
 }
 
-.screencap img {
+.screencap {
   width: 300px;
   height: auto;
-  float: right;
-  position: relative;
-  right: -500px;
-  top: 50px;
+  position: absolute;
+  left: calc(100% + 15px);
+  top: 400px;
   border: 10px double var(--border);
+}
+
+.screencap img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .monster {
   background-color: var(--accent);
   color: var(--text);
   padding: 1em;
-  margin-right: 2em;
-  position: relative;
-  left: -300px;
-  top: 200px;
-  float: left;
+  position: absolute;
+  right: calc(100% - 70px);
+  top: 704px;
   width: 240px;
   height: auto;
   align-content: center;
@@ -177,15 +179,14 @@ h3 {
   background-color: var(--accent);
   color: var(--text);
   padding: 1em;
-  margin-right: 2em;
   color: var(--text);
-  float: right;
-  right: -800px;
   width: 200px;
   height: auto;
   text-align: center;
   align-content: center;
-  position: relative;
+  position: absolute;
+  top: 800px;
+  left: calc(100% + 30px);
   border: 10px double var(--border);
 }
 
@@ -221,15 +222,13 @@ h3 {
   background-color: var(--accent);
   color: var(--text);
   padding: 1em;
-  left: -700px;
-  top: 300px;
-  margin-right: 2em;
-  float: right;
   width: 250px;
   height: auto;
   text-align: center;
   align-content: center;
-  position: relative;
+  position: absolute;
+  top: 1000px;
+  right: calc(100% - 20px);
   border: 10px double var(--border);
 }
 
@@ -259,4 +258,13 @@ h3 {
   font-size: 1.5em;
   width: 670px;
   height: 300px;
+}
+
+.ul-1 {
+  margin: 0;
+  padding: 19px;
+}
+
+.wrap {
+  padding-left: 52px;
 }
