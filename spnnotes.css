@@ -2,48 +2,46 @@
   --main: #ffd5b9;
   --accent: #4e1909;
   --border: #fffff4;
-  --extra: #ffe8a3;
 }
 
 .spn1 {
   --main: #6EBBB8;
   --accent: #000;
   --border: #cbe7e6;
-  --text: #ffffff;
-  --extra: #cbe7e6;
-  --background: url("https://imgur.com/AtSrC1W.jpg");
+  --bodytext: #000000;
+  --accenttext: #ffffff;
 }
 
 .spn2 {
-  --main: #f8d3c5;
-  --accent: #fceee9;
-  --border: #b9cfb7;
-  --extra: #667b68;
-  --background: url("https://imgur.com/dnMzixW.jpg");
+  --main: #e38846;
+  --accent: #841D16;
+  --border: #fff2cc;
+  --bodytext: #ffffff;
+  --accenttext: #ffffff;
 }
 
 .spn3 {
-  --main: #f8d3c5;
-  --accent: #fceee9;
-  --border: #b9cfb7;
-  --extra: #667b68;
-  --background: url("https://imgur.com/w4m7t4F.jpg");
+  --main: #9993D3;
+  --accent: #374C88;
+  --border: #EAD0D7;
+  --bodytext: #ffffff;
+  --accenttext: #fff;
 }
 
 .spn4 {
-  --main: #f8d3c5;
-  --accent: #fceee9;
-  --border: #b9cfb7;
-  --extra: #667b68;
-  --background: url("https://imgur.com/nsxJ03l.jpg");
+  --main: #9B0217;
+  --accent: #fff;
+  --border: #000;
+  --bodytext: #ffffff;
+  --accenttext: #000;
 }
 
 .spn5 {
-  --main: #f8d3c5;
-  --accent: #fceee9;
-  --border: #b9cfb7;
-  --extra: #667b68;
-  --background: url("https://imgur.com/qVaMnwA.jpg");
+  --main: #fff;
+  --accent: #fff;
+  --border: #861616;
+  --bodytext: #000;
+  --accenttext: #861616;
 }
 
 body {
@@ -52,19 +50,18 @@ body {
   background-position: center bottom;
   background-size: cover;
   color: black;
-  font-family: "Viaoda Libre", serif;
+  font-family: "Crimson Pro", serif;
   font-size: 1.1em;
   text-align: justify;
   margin: 0;
 }
 
 a {
-  text-decoration: none;
-  color: var(--main);
+  text-decoration: underline 2px;
+  color: var(--border);
 }
 
 #all {
-  position: relative;
   width: 670px;
   margin: 0 auto;
   padding: 30px;
@@ -73,68 +70,32 @@ a {
   color: var(--accent);
 }
 
+.wrap {
+  position: relative;
+  margin-top: 4em;
+}
+
 h1 {
   background: url("https://imgur.com/NIl9XKW.jpg") no-repeat;
   background-size: 300px 100px;
   background-position: left 40px top 50px;
-  color: var(--text);
+  color: var(--accenttext);
   font-family: "Fleur De Leah", serif;
   font-size: 4em;
-  padding: 0px 50px 60px 50px;
+  padding: 0px 40px 60px 40px;
   margin-top: 0;
   overflow: visible;
 }
 
-.tagline {
-  font-family: "Special Elite", serif;
-  float: right;
-  font-size: 1.15em;
-  border: 8px double var(--border);
-  background-color: var(--accent);
-  color: var(--text);
-  padding: 20px;
-  margin: 30px;
-  width: 200px;
-  height: auto;
-}
-
-table {
-  width: 100%;
-  margin: 0 auto 4em auto;
-}
-
-tr,
-th {
-  border: 2px solid var(--border);
-  background-color: var(--accent);
-  width: 130px;
-  height: 1.5em;
-  color: var(--text);
-  text-align: center;
-  font-family: "Special Elite", serif;
-  content-align: center;
-}
-
-.parts {
-  background-color: var(--accent);
-  color: var(--text);
-  padding: 17px;
-  border: 10px double var(--border);
-  color: var(--text);
-  position: absolute;
-  right: calc(100% - 20px);
-  width: 146px;
-}
-
 h2 {
-  color: var(--text);
+  color: var(--accenttext);
   font-family: "Special Elite", serif;
   font-size: 3em;
   padding: 0px 50px 0px 50px;
   margin-top: 0;
   overflow: visible;
   text-align: center;
-  text-decoration: underline;
+  text-decoration: underline 3px;
 }
 
 h3 {
@@ -147,12 +108,96 @@ h3 {
   font-family: "Special Elite", serif;
 }
 
+ul {
+  color: var(--bodytext);
+}
+
+.ul {
+  margin: 0;
+  padding: 19px;
+}
+
+.tagline {
+  font-family: "Special Elite", serif;
+  float: right;
+  font-size: 1.15em;
+  border: 8px double var(--border);
+  background-color: var(--accent);
+  color: var(--accenttext);
+  padding: 20px;
+  margin: 30px;
+  width: 200px;
+  height: auto;
+}
+
+table {
+  width: 100%;
+  margin: 0 auto 0 auto;
+}
+
+tr,
+th {
+  border: 2px solid var(--border);
+  background-color: var(--accent);
+  width: 130px;
+  height: 1.5em;
+  color: var(--accenttext);
+  text-align: center;
+  font-family: "Special Elite", serif;
+  content-align: center;
+}
+
+table a {
+  text-decoration: none;
+}
+
+.parts {
+  background-color: var(--accent);
+  color: var(--accenttext);
+  padding: 0.75em;
+  border: 10px double var(--border);
+  color: var(--accenttext);
+  position: absolute;
+  right: calc(100% + 50px);
+  top: 0;
+  width: 160px;
+  height: auto;
+  text-align: center;
+}
+
+.partsextra {
+  background-color: var(--accent);
+  width: 160px;
+  height: auto;
+  padding: 0.75em;
+  position: absolute;
+  top: 50%;
+  right: 130px;
+  color: var(--accenttext);
+  text-align: center;
+  border: 10px double var(--border);
+}
+
+.partsex2 {
+  background-color: var(--accent);
+  width: 160px;
+  height: auto;
+  padding: 0.75em;
+  position: absolute;
+  top: 150%;
+  right: -40px;
+  color: var(--accenttext);
+  text-align: center;
+  border: 10px double var(--border);
+}
+
 .screencap {
   width: 300px;
   height: auto;
   position: absolute;
-  left: calc(100% + 15px);
-  top: 400px;
+  left: calc(100% + 45px);
+  top: 10px;
+  background-color: var(--accent);
   border: 10px double var(--border);
 }
 
@@ -164,40 +209,76 @@ h3 {
 
 .monster {
   background-color: var(--accent);
-  color: var(--text);
+  color: var(--accenttext);
   padding: 1em;
   position: absolute;
-  right: calc(100% - 70px);
-  top: 704px;
+  right: calc(100% + 50px);
+  top: 350px;
   width: 240px;
   height: auto;
-  align-content: center;
   border: 10px double var(--border);
+}
+
+.victims {
+  background-color: var(--accent);
+  width: 250px;
+  height: auto;
+  padding: 1em;
+  position: absolute;
+  top: 97%;
+  right: 20px;
+  color: var(--accenttext);
+  text-align: justify;
+  border: 10px double var(--border);
+}
+
+.victims:before {
+  content: "Victims \A";
+  white-space: pre;
+  color: var(--main);
+  display: block;
+  text-align: center;
+  font-size: 1.25em;
+  padding-bottom: 0.5em;
+  font-family: "Special Elite", serif;
+  font-weight: bold;
+  margin-bottom: -15px;
 }
 
 .connections {
   background-color: var(--accent);
-  color: var(--text);
+  color: var(--accenttext);
   padding: 1em;
-  color: var(--text);
+  left: calc(100% + 60px);
+  top: 400px;
   width: 200px;
   height: auto;
   text-align: center;
-  align-content: center;
   position: absolute;
-  top: 800px;
-  left: calc(100% + 30px);
   border: 10px double var(--border);
+}
+
+.connections:before {
+  content: "Character \A Connections \A";
+  white-space: pre;
+  color: var(--main);
+  font-size: 1.25em;
+  padding-bottom: -100px;
+  font-family: "Special Elite", serif;
+  font-weight: bold;
+  display: block;
+  margin-bottom: -15px;
 }
 
 .conncont {
   background-color: var(--accent);
-  width: 300px;
+  width: 250px;
   height: auto;
+  padding: 1em;
   position: absolute;
-  top: 170px;
+  top: 97%;
   left: 20px;
-  color: var(--text);
+  color: var(--accenttext);
   text-align: justify;
   border: 10px double var(--border);
 }
@@ -205,10 +286,10 @@ h3 {
 .theme {
   background-color: var(--accent);
   padding: 1em;
-  color: var(--text);
+  color: var(--accenttext);
   font-family: "Special Elite", serif;
   font-size: 1.5em;
-  margin: 1.5em;
+  margin: 1em;
   overflow: visible;
   text-align: center;
   border: 10px double var(--border);
@@ -218,20 +299,6 @@ h3 {
   content: "Theme: "
 }
 
-.victims {
-  background-color: var(--accent);
-  color: var(--text);
-  padding: 1em;
-  width: 250px;
-  height: auto;
-  text-align: center;
-  align-content: center;
-  position: absolute;
-  top: 1000px;
-  right: calc(100% - 20px);
-  border: 10px double var(--border);
-}
-
 .allegory {
   font-family: "Special Elite", serif;
   font-size: 1.15em;
@@ -239,12 +306,20 @@ h3 {
   background-color: var(--border);
   color: var(--accent);
   padding: 20px;
-  margin: 50px;
+  margin: 30px 50px 30px 50px;
   height: auto;
 }
 
 .allegory:before {
-  content: "Allegory: "
+  content: "Allegory: ";
+}
+
+.allegory a {
+  text-align: center;
+  font-weight: bold;
+  display: block;
+  font-size: 1.2em;
+  color: var(--main);
 }
 
 .links {
@@ -260,11 +335,18 @@ h3 {
   height: 300px;
 }
 
-.ul-1 {
-  margin: 0;
-  padding: 19px;
+.notes {
+  background-color: var(--accent);
+  padding: 1em;
+  color: var(--accenttext);
+  font-family: "Special Elite", serif;
+  font-size: 1.5em;
+  margin: 1em;
+  overflow: visible;
+  text-align: center;
+  border: 10px double var(--border);
 }
 
-.wrap {
-  padding-left: 52px;
+.notes:before {
+  content: "Extra Notes";
 }
